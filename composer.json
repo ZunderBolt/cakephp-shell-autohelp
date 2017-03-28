@@ -1,0 +1,32 @@
+{
+    "name": "zunderbolt/cakephp-shell-autohelp",
+    "description": "Autogenerates CakePHP3 console shells help",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "plugin", "shell"],
+    "license": "MIT",
+    "homepage": "https://github.com/zunderbolt/cakephp-shell-autohelp",
+    "authors": [
+        {
+            "name": "Michael Guchakov",
+            "email": "zunderbolt@gmail.com",
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": ">=3.0 <4.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZunderBolt\\ShellAutoHelp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZunderBolt\\ShellAutoHelp\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
